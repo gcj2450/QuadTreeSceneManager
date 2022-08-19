@@ -1,4 +1,6 @@
-﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 
 Shader "Area/Water/StaticWater"{
 	
@@ -79,7 +81,7 @@ Shader "Area/Water/StaticWater"{
 				o.normalDir = mul(unity_ObjectToWorld , float4(v.normal , 0)).xyz ;
 				float4 time = _Time + _TimeEditor ;
 				v.vertex.xyz += (normalize((float3(1,0.5 ,0.5) + v.normal))* v.vertexColor.r * sin(((v.vertexColor.b * 3.141592654) + time.g)) * _Strength) ;
-				o.pos = mul(UNITY_MATRIX_MVP , v.vertex) ;
+				o.pos = UnityObjectToClipPos( v.vertex) ;
 				UNITY_TRANSFER_FOG(o, o.pos);
 				return  o ;
 			}

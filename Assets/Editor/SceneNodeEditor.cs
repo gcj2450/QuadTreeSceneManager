@@ -156,7 +156,7 @@ public class SceneNodeEditor : EditorWindow
 
             for (int i = 0; i < treeInfo.storedObjects.Count; i++)
             {
-                Transform stored = Selection.activeTransform.FindChild(treeInfo.storedObjects[i].name);
+                Transform stored = Selection.activeTransform.Find(treeInfo.storedObjects[i].name);
                 if (stored!= null)
                 {
                     stored.parent = newGo.transform;
@@ -195,7 +195,7 @@ public class SceneNodeEditor : EditorWindow
         CheckPath(szPath);
 
         //树信息
-        Transform tree = go.transform.FindChild("QuadTreeInfo");
+        Transform tree = go.transform.Find("QuadTreeInfo");
         Object treePrefab = PrefabUtility.CreateEmptyPrefab(szPath + "/"+ go.name + ".prefab");
         treePrefab = PrefabUtility.ReplacePrefab(tree.gameObject, treePrefab);
 
@@ -203,7 +203,7 @@ public class SceneNodeEditor : EditorWindow
         szPath = szPath + "/" + go.name;
         CheckPath(szPath);
 
-        Transform objs = go.transform.FindChild("Objs");
+        Transform objs = go.transform.Find("Objs");
         foreach (Transform t in objs)
         {
             PrefabLightmapData pld = t.gameObject.AddComponent<PrefabLightmapData>();

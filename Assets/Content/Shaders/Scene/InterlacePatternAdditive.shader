@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 
 Shader "Kingsoft/Scene/InterlacePatternAdditive" {
 	Properties {
@@ -29,7 +31,7 @@ Shader "Kingsoft/Scene/InterlacePatternAdditive" {
 		{
 			v2f o;
 			
-			o.pos = mul (UNITY_MATRIX_MVP, v.vertex);	
+			o.pos = UnityObjectToClipPos (v.vertex);	
 			o.uv.xy = v.texcoord.xy;
 			o.uv2.xy = TRANSFORM_TEX(v.texcoord.xy, _InterlacePattern) + _Time.xx * _InterlacePattern_ST.zw;
 			UNITY_TRANSFER_FOG(o, o.pos);

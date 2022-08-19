@@ -1,4 +1,6 @@
-﻿///////////////////////////////////////////
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+///////////////////////////////////////////
 // author     : chen yong
 // create time: 2015/11/05
 // modify time: 
@@ -52,7 +54,7 @@ Shader "Kingsoft/Mobile/Particles/Alpha Blended"
 			v2f vert (appdata_t v)
 			{
 				v2f o = (v2f)0;
-				o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+				o.vertex = UnityObjectToClipPos(v.vertex);
 				o.color = v.color;
 				o.texcoord = TRANSFORM_TEX(v.texcoord,_MainTex);
 				UNITY_TRANSFER_FOG(o, o.vertex);
