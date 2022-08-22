@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.IO;
+using DannyGoodayle;
 
 public class SceneNodeEditor : EditorWindow
 {

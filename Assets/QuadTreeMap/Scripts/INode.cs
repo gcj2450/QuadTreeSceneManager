@@ -6,6 +6,9 @@ namespace WCC.QuadTree
 {
     public interface INode
     {
+        /// <summary>
+        /// 边界
+        /// </summary>
         Bounds bound { get; set; }
         /// <summary>
         /// 初始化插入一个场景物体

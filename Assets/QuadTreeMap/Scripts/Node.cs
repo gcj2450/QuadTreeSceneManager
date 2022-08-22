@@ -5,14 +5,33 @@ using UnityEngine;
 
 namespace WCC.QuadTree
 {
+    /// <summary>
+    /// 树节点
+    /// </summary>
     public class Node : INode
     {
+        /// <summary>
+        /// 节点边界
+        /// </summary>
         public Bounds bound { get; set; }
 
+        /// <summary>
+        /// 节点当前深度
+        /// </summary>
         private int depth;
+        /// <summary>
+        /// 所属树
+        /// </summary>
         private Tree belongTree;
+        /// <summary>
+        /// 子节点列表
+        /// </summary>
         private Node[] childList;
+        /// <summary>
+        /// 物体列表
+        /// </summary>
         private List<ObjData> objDataList;
+
         private bool isInside = false;
 
         public Node(Bounds bound, int depth, Tree belongTree)
@@ -23,6 +42,10 @@ namespace WCC.QuadTree
             objDataList = new List<ObjData>();
         }
 
+        /// <summary>
+        /// 插入数据
+        /// </summary>
+        /// <param name="objData"></param>
         public void InsertObjData(ObjData objData)
         {
             Node node = null;
@@ -110,6 +133,9 @@ namespace WCC.QuadTree
             }
         }
 
+        /// <summary>
+        /// 创建四个子节点
+        /// </summary>
         private void CreateChild()
         {
             childList = new Node[belongTree.maxChildCount];
@@ -126,20 +152,53 @@ namespace WCC.QuadTree
             }
         }
 
+        //public void TriggerMove(Camera camera)
+        //{
+        //    //刷新当前节点
+        //    for (int i = 0; i < objList.Count; ++i)
+        //    {
+        //        //进入该节点中意味着该节点在摄像机内，把该节点保存的物体全部创建出来
+        //        ResourcesManager.Instance.LoadAsync(objList[i]);
+        //    }
+
+        //    if (depth == 0)
+        //    {
+        //        ResourcesManager.Instance.RefreshStatus();
+        //    }
+
+        //    //刷新子节点
+        //    if (childList != null)
+        //    {
+        //        for (int i = 0; i < childList.Length; ++i)
+        //        {
+        //            if (childList[i].bound.CheckBoundIsInCamera(camera))
+        //            {
+        //                childList[i].TriggerMove(camera);
+        //            }
+        //        }
+        //    }
+        //}
+
+        /// <summary>
+        /// 绘制边界
+        /// </summary>
         public void DrawBound()
         {
             if (isInside)
             {
+                ///相机在节点内，绘制为红色
                 Gizmos.color = Color.red;
                 Gizmos.DrawWireCube(bound.center, bound.size);
             }
             else if (objDataList.Count != 0)
             {
+                ///节点内无物体，绘制为蓝色
                 Gizmos.color = Color.blue;
                 Gizmos.DrawWireCube(bound.center, bound.size);
             }
             else
             {
+                //节点内有物体，绘制为绿色
                 Gizmos.color = Color.green;
                 Gizmos.DrawWireCube(bound.center, bound.size);
             }
