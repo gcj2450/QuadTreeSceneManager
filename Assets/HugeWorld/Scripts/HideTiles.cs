@@ -31,9 +31,11 @@ public class HideTiles : MonoBehaviour {
 			float zDistance = Mathf.Abs(tilePosition.z - playerPosition.z);
 
 			if (xDistance + zDistance > maxDistance) {
-				tile.SetActive (false);
+//				tile.SetActive (false);
+				tile.GetComponent<HideObjectsInTile>().ActivateTile(false);
 			} else {
-				tile.SetActive (true);
+//				tile.SetActive (true);
+				tile.GetComponent<HideObjectsInTile>().ActivateTile(true);
 			}
 		}
 	}

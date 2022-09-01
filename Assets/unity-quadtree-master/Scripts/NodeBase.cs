@@ -405,12 +405,12 @@ namespace Quadtree
 
         public void DrawBounds(bool displayNumberOfItems = false)
         {
-            if (displayNumberOfItems)
-                Handles.Label(Bounds.center, _items.Count.ToString());
+            //if (displayNumberOfItems)
+            //    Handles.Label(Bounds.center, _items.Count.ToString());
 
-            Gizmos.DrawWireCube(Bounds.center, Bounds.size);
-            foreach (var subNode in SubNodes)
-                subNode.DrawBounds(displayNumberOfItems);
+            //Gizmos.DrawWireCube(Bounds.center, Bounds.size);
+            //foreach (var subNode in SubNodes)
+            //    subNode.DrawBounds(displayNumberOfItems);
         }
     }
 }

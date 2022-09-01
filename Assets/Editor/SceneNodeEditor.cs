@@ -197,8 +197,11 @@ public class SceneNodeEditor : EditorWindow
 
         //树信息
         Transform tree = go.transform.Find("QuadTreeInfo");
-        Object treePrefab = PrefabUtility.CreateEmptyPrefab(szPath + "/"+ go.name + ".prefab");
-        treePrefab = PrefabUtility.ReplacePrefab(tree.gameObject, treePrefab);
+        //这两行过时了，改为下面了
+        //Object treePrefab = PrefabUtility.CreateEmptyPrefab(szPath + "/"+ go.name + ".prefab");
+        //treePrefab = PrefabUtility.ReplacePrefab(tree.gameObject, treePrefab);
+        //改为这个了
+       GameObject treePrefab = PrefabUtility.SaveAsPrefabAsset(tree.gameObject, szPath + "/" + go.name + ".prefab");
 
         //物件信息
         szPath = szPath + "/" + go.name;
@@ -209,9 +212,11 @@ public class SceneNodeEditor : EditorWindow
         {
             PrefabLightmapData pld = t.gameObject.AddComponent<PrefabLightmapData>();
             pld.SaveLightmap();
-            
-            Object tempPrefab = PrefabUtility.CreateEmptyPrefab(szPath + "/" + t.name + ".prefab");
-            tempPrefab = PrefabUtility.ReplacePrefab(t.gameObject, tempPrefab);
+
+            //Object tempPrefab = PrefabUtility.CreateEmptyPrefab(szPath + "/" + t.name + ".prefab");
+            //tempPrefab = PrefabUtility.ReplacePrefab(t.gameObject, tempPrefab);
+
+            GameObject tempPrefab = PrefabUtility.SaveAsPrefabAsset(t.gameObject, szPath + "/" + t.name + ".prefab");
         }
     }
 

@@ -1,130 +1,321 @@
 fileFormatVersion: 2
 guid: c0ba83d88700cf340bb4e35464936030
 ModelImporter:
-  serializedVersion: 16
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Box85
-    100004: Box85 1
-    100006: Cone01
-    100008: hbxz_wj024_01
-    100010: hbxz_wj024_02
-    100012: hbxz_wj024_03
-    100014: hbxz_wj024_04
-    100016: hbxz_wj024_05
-    100018: hbxz_wj024_06
-    100020: hbxz_wj024_07
-    100022: Object01
-    100024: Object10
-    100026: objfemale0
-    100028: Particle View 01
-    100030: Particle View 01 1
-    400000: //RootNode
-    400002: Box85
-    400004: Box85 1
-    400006: Cone01
-    400008: hbxz_wj024_01
-    400010: hbxz_wj024_02
-    400012: hbxz_wj024_03
-    400014: hbxz_wj024_04
-    400016: hbxz_wj024_05
-    400018: hbxz_wj024_06
-    400020: hbxz_wj024_07
-    400022: Object01
-    400024: Object10
-    400026: objfemale0
-    400028: Particle View 01
-    400030: Particle View 01 1
-    2300000: //RootNode
-    2300002: Box85
-    2300004: Box85 1
-    2300006: hbxz_wj024_01
-    2300008: hbxz_wj024_02
-    2300010: hbxz_wj024_03
-    2300012: hbxz_wj024_04
-    2300014: hbxz_wj024_05
-    2300016: hbxz_wj024_06
-    2300018: hbxz_wj024_07
-    2300020: Object01
-    2300022: Object10
-    2300024: objfemale0
-    3300000: //RootNode
-    3300002: Box85
-    3300004: Box85 1
-    3300006: hbxz_wj024_01
-    3300008: hbxz_wj024_02
-    3300010: hbxz_wj024_03
-    3300012: hbxz_wj024_04
-    3300014: hbxz_wj024_05
-    3300016: hbxz_wj024_06
-    3300018: hbxz_wj024_07
-    3300020: Object01
-    3300022: Object10
-    3300024: objfemale0
-    4300000: hbxz_wj024_02
-    4300002: objfemale0
-    4300004: Box85
-    4300006: Object01
-    4300008: Box85
-    4300010: hbxz_wj024_01
-    4300012: hbxz_wj024_05
-    4300014: hbxz_wj024_03
-    4300016: hbxz_wj024_04
-    4300018: hbxz_wj024_07
-    4300020: hbxz_wj024_06
-    4300022: Object10
-    9500000: //RootNode
+  serializedVersion: 21202
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Box85
+  - first:
+      1: 100004
+    second: Box85 1
+  - first:
+      1: 100006
+    second: Cone01
+  - first:
+      1: 100008
+    second: hbxz_wj024_01
+  - first:
+      1: 100010
+    second: hbxz_wj024_02
+  - first:
+      1: 100012
+    second: hbxz_wj024_03
+  - first:
+      1: 100014
+    second: hbxz_wj024_04
+  - first:
+      1: 100016
+    second: hbxz_wj024_05
+  - first:
+      1: 100018
+    second: hbxz_wj024_06
+  - first:
+      1: 100020
+    second: hbxz_wj024_07
+  - first:
+      1: 100022
+    second: Object01
+  - first:
+      1: 100024
+    second: Object10
+  - first:
+      1: 100026
+    second: objfemale0
+  - first:
+      1: 100028
+    second: Particle View 01
+  - first:
+      1: 100030
+    second: Particle View 01 1
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Box85
+  - first:
+      4: 400004
+    second: Box85 1
+  - first:
+      4: 400006
+    second: Cone01
+  - first:
+      4: 400008
+    second: hbxz_wj024_01
+  - first:
+      4: 400010
+    second: hbxz_wj024_02
+  - first:
+      4: 400012
+    second: hbxz_wj024_03
+  - first:
+      4: 400014
+    second: hbxz_wj024_04
+  - first:
+      4: 400016
+    second: hbxz_wj024_05
+  - first:
+      4: 400018
+    second: hbxz_wj024_06
+  - first:
+      4: 400020
+    second: hbxz_wj024_07
+  - first:
+      4: 400022
+    second: Object01
+  - first:
+      4: 400024
+    second: Object10
+  - first:
+      4: 400026
+    second: objfemale0
+  - first:
+      4: 400028
+    second: Particle View 01
+  - first:
+      4: 400030
+    second: Particle View 01 1
+  - first:
+      23: 2300000
+    second: //RootNode
+  - first:
+      23: 2300002
+    second: Box85
+  - first:
+      23: 2300004
+    second: Box85 1
+  - first:
+      23: 2300006
+    second: hbxz_wj024_01
+  - first:
+      23: 2300008
+    second: hbxz_wj024_02
+  - first:
+      23: 2300010
+    second: hbxz_wj024_03
+  - first:
+      23: 2300012
+    second: hbxz_wj024_04
+  - first:
+      23: 2300014
+    second: hbxz_wj024_05
+  - first:
+      23: 2300016
+    second: hbxz_wj024_06
+  - first:
+      23: 2300018
+    second: hbxz_wj024_07
+  - first:
+      23: 2300020
+    second: Object01
+  - first:
+      23: 2300022
+    second: Object10
+  - first:
+      23: 2300024
+    second: objfemale0
+  - first:
+      33: 3300000
+    second: //RootNode
+  - first:
+      33: 3300002
+    second: Box85
+  - first:
+      33: 3300004
+    second: Box85 1
+  - first:
+      33: 3300006
+    second: hbxz_wj024_01
+  - first:
+      33: 3300008
+    second: hbxz_wj024_02
+  - first:
+      33: 3300010
+    second: hbxz_wj024_03
+  - first:
+      33: 3300012
+    second: hbxz_wj024_04
+  - first:
+      33: 3300014
+    second: hbxz_wj024_05
+  - first:
+      33: 3300016
+    second: hbxz_wj024_06
+  - first:
+      33: 3300018
+    second: hbxz_wj024_07
+  - first:
+      33: 3300020
+    second: Object01
+  - first:
+      33: 3300022
+    second: Object10
+  - first:
+      33: 3300024
+    second: objfemale0
+  - first:
+      43: 4300000
+    second: hbxz_wj024_02
+  - first:
+      43: 4300002
+    second: objfemale0
+  - first:
+      43: 4300004
+    second: Box85
+  - first:
+      43: 4300006
+    second: Object01
+  - first:
+      43: 4300008
+    second: Box85
+  - first:
+      43: 4300010
+    second: hbxz_wj024_01
+  - first:
+      43: 4300012
+    second: hbxz_wj024_05
+  - first:
+      43: 4300014
+    second: hbxz_wj024_03
+  - first:
+      43: 4300016
+    second: hbxz_wj024_04
+  - first:
+      43: 4300018
+    second: hbxz_wj024_07
+  - first:
+      43: 4300020
+    second: hbxz_wj024_06
+  - first:
+      43: 4300022
+    second: Object10
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
-    lODScreenPercentages: []
-    globalScale: .00999999978
+    lODScreenPercentages:
+    - 0.5
+    - 0.25
+    - 0.01
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.01
     rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
