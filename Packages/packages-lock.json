@@ -26,21 +26,6 @@
       },
       "url": "https://packages.unity.cn"
     },
-    "com.unity.analytics": {
-      "version": "3.6.11",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0"
-      },
-      "url": "https://packages.unity.cn"
-    },
-    "com.unity.autolod": {
-      "version": "file:AutoLOD",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "com.unity.burst": {
       "version": "1.6.6",
       "depth": 0,
@@ -51,21 +36,11 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.collab-proxy": {
-      "version": "1.13.5",
+      "version": "1.15.18",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "2.0.0",
         "com.unity.services.core": "1.0.1"
-      },
-      "url": "https://packages.unity.cn"
-    },
-    "com.unity.doc_zh": {
-      "version": "0.1.0-preview.10",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.uiwidgets": "1.5.4-preview.12"
       },
       "url": "https://packages.unity.cn"
     },
@@ -74,15 +49,6 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
-      "url": "https://packages.unity.cn"
-    },
-    "com.unity.ide.rider": {
-      "version": "3.0.7",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ext.nunit": "1.0.6"
-      },
       "url": "https://packages.unity.cn"
     },
     "com.unity.ide.visualstudio": {
@@ -95,7 +61,7 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.ide.vscode": {
-      "version": "1.2.4",
+      "version": "1.2.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -108,54 +74,33 @@
       "dependencies": {},
       "url": "https://packages.unity.cn"
     },
-    "com.unity.messenger": {
-      "version": "1.0.7-preview",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.uiwidgets": "1.5.4-preview.12"
-      },
-      "url": "https://packages.unity.cn"
-    },
     "com.unity.nuget.newtonsoft-json": {
-      "version": "2.0.0",
-      "depth": 1,
+      "version": "3.0.2",
+      "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.cn"
     },
-    "com.unity.purchasing": {
-      "version": "4.0.3",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0",
-        "com.unity.modules.unityanalytics": "1.0.0",
-        "com.unity.modules.unitywebrequest": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0",
-        "com.unity.modules.androidjni": "1.0.0",
-        "com.unity.services.core": "1.0.1"
-      },
-      "url": "https://packages.unity.cn"
-    },
     "com.unity.scriptablebuildpipeline": {
-      "version": "1.19.6",
+      "version": "1.20.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.cn"
     },
     "com.unity.services.core": {
-      "version": "1.0.1",
+      "version": "1.4.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.modules.unitywebrequest": "1.0.0"
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.0.2",
+        "com.unity.modules.androidjni": "1.0.0"
       },
       "url": "https://packages.unity.cn"
     },
     "com.unity.test-framework": {
-      "version": "1.1.29",
+      "version": "1.1.31",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -175,7 +120,7 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.timeline": {
-      "version": "1.6.2",
+      "version": "1.6.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -194,23 +139,6 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
-    },
-    "com.unity.uiwidgets": {
-      "version": "1.5.4-preview.12",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.cn"
-    },
-    "com.unity.xr.legacyinputhelpers": {
-      "version": "2.1.8",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.modules.vr": "1.0.0",
-        "com.unity.modules.xr": "1.0.0"
-      },
-      "url": "https://packages.unity.cn"
     },
     "com.whinarn.unitymeshsimplifier": {
       "version": "file:UnityMeshSimplifier-master",
